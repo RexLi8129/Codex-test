@@ -1,0 +1,67 @@
+:root {
+  color-scheme: dark;
+  --bg: #101426;
+  --panel: #1c2340;
+  --accent: #76d9ff;
+  --accent-2: #7bff9f;
+  --danger: #ff7b8f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top, #1e2750 0%, var(--bg) 65%);
+  color: #eef4ff;
+}
+
+.game-shell {
+  width: min(92vw, 460px);
+  padding: 1rem 1rem 1.25rem;
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--panel), #000 15%);
+  border: 1px solid #2d3968;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+header p {
+  margin: 0.25rem 0 0.75rem;
+  opacity: 0.85;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+#restart {
+  border: none;
+  border-radius: 999px;
+  background: var(--danger);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.35rem 0.85rem;
+  cursor: pointer;
+}
+
+#game {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #7ec9ff 0%, #d5f5ff 60%, #f6fdff 100%);
+  border: 2px solid #304e8a;
+}
