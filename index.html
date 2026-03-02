@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sky Hopper</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <h1>Sky Hopper</h1>
+      <p>Move with ← → / A D and keep climbing!</p>
+    </header>
+
+    <section class="hud">
+      <span>Score: <strong id="score">0</strong></span>
+      <button id="restart" hidden>Restart</button>
+    </section>
+
+    <canvas id="game" width="420" height="600" aria-label="Sky Hopper game area"></canvas>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
